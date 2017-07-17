@@ -15,6 +15,8 @@ import {
 
 import { StackNavigator } from 'react-navigation';
 
+import App from './App';
+
 var QRCode = require('react-native-qrcode');
 
 export default class QR extends Component {
@@ -63,6 +65,10 @@ export default class QR extends Component {
     );
   }
 }
+
+const ReactNativeDemo = StackNavigator({
+  App: {screen: App},
+})
 
 const styles = StyleSheet.create({
   container: {
